@@ -1,0 +1,39 @@
+Sample 1:
+print("hello world")
+
+Sample 2:
+print("hello there")
+
+print("what is  your name?")
+
+name = input()
+
+print("hello " + name)
+
+Sample 3:
+print("Please enter your age")
+
+age = int(input())
+
+if age <= 17:
+    print("you are not an adult") # this line is four spaces to the right
+
+elif age >= 18:
+    print("you are an adult!") # this line is four spaces to the right
+
+Sample 4:
+print("Hello, Please enter your first name")
+name = input()
+print("Hello, " + name + " Please enter your last name")
+last_name = input()
+print("Hello, " + name + " " + last_name)
+print("How old are you?")
+age = int(input())
+if age <= 20:
+    print("You are still young!")
+elif age >= 40 and age <= 60:
+    print("You are getting old!")
+elif age > 60:
+    print("You are retired!")
+
+print("Firstname: " + name + " Lastname: " + last_name + " Age: " + str(age))

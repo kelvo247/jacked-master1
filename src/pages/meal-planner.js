@@ -21,7 +21,7 @@ export default function MealPlanner() {
                 </div>
                 <div className={styles.card}>
                     <i className={`${styles.cardIcon} 3`}></i>
-                    <h3 className={styles.cardTitle}> Chicken burgers</h3>
+                    <h3 className={styles.cardTitle}> Fish Fingers</h3>
                     <p className={styles.cardDescription}>Grilled Cajun-spiced chicken breasts are loaded with bacon, avocado, cheese and spinach, 
                     then served in a ciabatta bun... set to become a Friday night favourite</p>
                     <button className={styles.cardButton}>Get Started</button>

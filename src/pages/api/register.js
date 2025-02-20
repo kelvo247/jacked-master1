@@ -23,8 +23,13 @@ export default async function handler(req, res) {
         }
 
 
-        const newUser = await User.create({ name, email, password, age, sex });
-        
+           // Hash password
+           const hashedPassword = await bcrypt.hash(password, 10);
+
+           // Save user to the database
+           const newUser = await User.create({ name, email, password: hashedPassword, age, sex });
+   
+
 
         res.status(201).json({ message: 'User registered successfully', user: newUser });
     } catch (error) {

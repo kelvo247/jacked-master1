@@ -53,7 +53,7 @@ const Register = () => {
             }}
         >
             <Typography variant="h4" component="h1" textAlign="center" gutterBottom>
-                Register1
+                Register123
             </Typography>
             <TextField
                 fullWidth
@@ -108,7 +108,7 @@ const Register = () => {
                 <MenuItem value="Female">Female</MenuItem>
             </TextField>
             <Button fullWidth variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
-                Regist
+                Register
             </Button>
         </Box>
     );

@@ -108,7 +108,7 @@ const Register = () => {
                 <MenuItem value="Female">Female</MenuItem>
             </TextField>
             <Button fullWidth variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
-                Register
+                Reg
             </Button>
         </Box>
     );

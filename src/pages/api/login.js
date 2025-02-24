@@ -23,7 +23,7 @@ export default async function handler(req, res) {
         }
 
         // Compare passwords
-        const isMatch = password === user.password; 
+        const isMatch = await bcrypt.compare(password, user.password);
         if (!isMatch) {
             return res.status(400).json({ error: 'Invalid credentials' });
         }

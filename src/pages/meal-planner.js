@@ -15,7 +15,7 @@ export default function MealPlanner() {
                 </div>
                 <div className={styles.card}>
                     <i className={`${styles.cardIcon} 2`}></i>
-                    <h3 className={styles.cardTitle}> bake</h3>
+                    <h3 className={styles.cardTitle}>Pasta Bake</h3>
                     <p className={styles.cardDescription}>An Italian-American classic, this freezable sausage pasta bake is an ideal make-ahead dish for busy days</p>
                     <button className={styles.cardButton}>Get Started</button>
                 </div>

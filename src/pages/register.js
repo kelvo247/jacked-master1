@@ -53,7 +53,7 @@ const Register = () => {
             }}
         >
             <Typography variant="h4" component="h1" textAlign="center" gutterBottom>
-                Register1234
+                Register12
             </Typography>
             <TextField
                 fullWidth

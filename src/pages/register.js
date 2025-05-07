@@ -120,7 +120,7 @@ const Register = () => {
       </TextField>
 
       <Button fullWidth variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
-        Register
+        Register Now
       </Button>
     </Box>
   );

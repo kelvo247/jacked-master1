@@ -19,7 +19,7 @@ const exercises = {
   "Bench Press": {
     sets: 4,
     reps: "8-12",
-    gif: "https://v2.exercisedb.io/image/rVlaT15VosxEn2",
+    gif:"https://v2.exercisedb.io/image/rVlaT15VosxEn2" ,
     description: `Lie flat on a bench with your feet flat on the ground and your back pressed against the bench.
     1. Grasp the barbell with an overhand grip slightly wider than shoulder-width apart.
     2. Lift the barbell off the rack and hold it directly above your chest with your arms fully extended.

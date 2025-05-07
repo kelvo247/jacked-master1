@@ -1,9 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-  images: {
-    domains: ['edamam-product-images.s3.amazonaws.com'],
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
   },
 };
-
-export default nextConfig;

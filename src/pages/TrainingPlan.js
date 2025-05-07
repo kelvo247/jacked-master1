@@ -31,7 +31,7 @@ const exercises = {
   "Incline Dumbbell Press": {
     sets: 4,
     reps: "8-12",
-    gif: "https://v2.exercisedb.io/image/XrPHNRx-UCjtpY",
+    gif:   "https://v2.exercisedb.io/image/RHwEsAPP6tOHfH",
     description: `Sit on an exercise ball with a dumbbell in each hand, palms facing forward.
   Slowly walk your feet forward, rolling your body down the ball until your head, neck, and upper back are supported on the ball.
   Hold the dumbbells at shoulder level, elbows bent and pointing out to the sides.

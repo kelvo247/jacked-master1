@@ -44,39 +44,79 @@ const Register = () => {
     }
   };
 
-  return (
-    <Box maxWidth={400} mx="auto" mt={5}>
-      <Typography variant="h4" mb={2}>Register</Typography>
-      <form onSubmit={handleSubmit}>
-        <TextField
-          fullWidth name="name" label="Name" margin="normal"
-          value={formData.name} onChange={handleChange}
-        />
-        <TextField
-          fullWidth name="email" label="Email" type="email" margin="normal"
-          value={formData.email} onChange={handleChange}
-        />
-        <TextField
-          fullWidth name="password" label="Password" type="password" margin="normal"
-          value={formData.password} onChange={handleChange}
-        />
-        <TextField
-          fullWidth name="age" label="Age" type="number" margin="normal"
-          value={formData.age} onChange={handleChange}
-        />
-        <Typography mt={2}>Sex:</Typography>
-        <RadioGroup row name="sex" value={formData.sex} onChange={handleChange}>
-          <FormControlLabel value="Male" control={<Radio />} label="Male" />
-          <FormControlLabel value="Female" control={<Radio />} label="Female" />
-          <FormControlLabel value="Other" control={<Radio />} label="Other" />
-        </RadioGroup>
-
-        <Button fullWidth variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
-          Register
-        </Button>
-      </form>
-    </Box>
-  );
+    return (
+        <Box
+            component="form"
+            onSubmit={handleSubmit}
+            sx={{
+                maxWidth: 400,
+                margin: 'auto',
+                mt: 4,
+                padding: 3,
+                border: '1px solid #ddd',
+                borderRadius: 2,
+            }}
+        >
+            <Typography variant="h4" component="h1" textAlign="center" gutterBottom>
+                Register12
+            </Typography>
+            <TextField
+                fullWidth
+                margin="normal"
+                label="Name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+            />
+            <TextField
+                fullWidth
+                margin="normal"
+                label="Email"
+                name="email"
+                type="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+            />
+            <TextField
+                fullWidth
+                margin="normal"
+                label="Password"
+                name="password"
+                type="password"
+                value={formData.password}
+                onChange={handleChange}
+                required
+            />
+            <TextField
+                fullWidth
+                margin="normal"
+                label="Age"
+                name="age"
+                type="number"
+                value={formData.age}
+                onChange={handleChange}
+                required
+            />
+            <TextField
+                fullWidth
+                margin="normal"
+                select
+                label="Sex"
+                name="sex"
+                value={formData.sex}
+                onChange={handleChange}
+                required
+            >
+                <MenuItem value="Male">Male</MenuItem>
+                <MenuItem value="Female">Female</MenuItem>
+            </TextField>
+            <Button fullWidth variant="contained" color="primary" type="submit" sx={{ mt: 2 }}>
+                Register
+            </Button>
+        </Box>
+    );
 };
 
 export default Register;

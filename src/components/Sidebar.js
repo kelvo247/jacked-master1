@@ -7,6 +7,7 @@ import FoodBankIcon from '@mui/icons-material/FoodBank';
 import ChatIcon from '@mui/icons-material/Chat';
 import LoginIcon from '@mui/icons-material/Login';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter'; // Added for Training Page
 
 const Sidebar = () => {
     const router = useRouter();
@@ -33,6 +34,10 @@ const Sidebar = () => {
                 <ListItem button onClick={() => navigate('/chatbot')}>
                     <ListItemIcon><ChatIcon /></ListItemIcon>
                     <ListItemText primary="AI Chatbot" />
+                </ListItem>
+                <ListItem button onClick={() => navigate('/TrainingPlan')}>
+                    <ListItemIcon><FitnessCenterIcon /></ListItemIcon>
+                    <ListItemText primary="Training Plan" />
                 </ListItem>
                 <ListItem button onClick={() => navigate('/register')}>
                     <ListItemIcon><PersonAddIcon /></ListItemIcon>
